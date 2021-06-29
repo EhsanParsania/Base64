@@ -2,9 +2,6 @@ const base64Table = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456
 let flag
 
 
-
-
-
 function atob() {
     let textArea = document.getElementById('input1')
     let input = textArea.value
@@ -32,12 +29,6 @@ function btoa() {
     document.getElementById('input1').value = decodedString
 
 }
-
-
-
-
-
-
 
 
 
