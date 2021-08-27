@@ -7,7 +7,6 @@ function atob() {
     let input = textArea.value
     document.getElementById('error-box').style.display = 'none'
 
-
     if (textArea.classList.contains('error')) {
         textArea.classList.remove('error')
         textArea.value = ''
@@ -29,10 +28,6 @@ function btoa() {
     document.getElementById('input1').value = decodedString
 
 }
-
-
-
-
 
 
 
@@ -85,8 +80,6 @@ function binaryToSixBit(binaryCode) {
 }
 
 
-
-
 function readSixBits(sixBitGroup) {
     const numbersInBase64Table = []
     for (let group of sixBitGroup) {
@@ -112,10 +105,11 @@ function readSixBits(sixBitGroup) {
 
 
 
-// decode functions :
+// DECODE FUNCTIONS :
 
 
-//  convert ascii code char to binary :
+
+//  CONVERT ASCII CODE CHAR TO BINARY
 function numberToSixBitBinary(string) {
     const binaryCode = []
     if (!string) {
@@ -125,7 +119,7 @@ function numberToSixBitBinary(string) {
     for (let i = 0; i < string.length; i++) {
         let charCode = base64Table.indexOf(string[i])
 
-        // if we didnt have the character add error class
+        // if we didnt have the character, add error css class
         if (charCode == -1 && string[i] != '=') {
             document.getElementById('input1').classList.add('error')
             document.getElementById('error-box').style.display = 'block'
@@ -157,7 +151,6 @@ function numberToSixBitBinary(string) {
 
 
 
-
 function binaryToEightbit(binaryCode) {
     let eightBitGroup = []
     let start = 0
@@ -172,8 +165,6 @@ function binaryToEightbit(binaryCode) {
     }
     return eightBitGroup
 }
-
-
 
 
 
@@ -199,9 +190,3 @@ function readEightBits(groupOfEightBits) {
     console.log('from base64 to ascii : ' + decodedString)
     return decodedString
 }
-
-
-
-
-
-
