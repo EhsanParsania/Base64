@@ -103,8 +103,6 @@ function readSixBits(sixBitGroup) {
 
 
 
-
-
 // DECODE FUNCTIONS :
 
 
@@ -182,7 +180,6 @@ function readEightBits(groupOfEightBits) {
             group[7] * 2 ** 0
 
         numberInAsciiTable.push(asciiNumber)
-        // console.log(groupOfEightBits)
     }
     let decodedString = ''
     // read code from ascii table (fromCharCode) :
